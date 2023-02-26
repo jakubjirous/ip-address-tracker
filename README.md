@@ -1,6 +1,6 @@
-# 🚀 Advice Generator App
+# 🚀 IP Address Tracker
 
-This is a solution to the [Advice Generator App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [IP Address Tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 --- 
 
@@ -13,6 +13,7 @@ This is a solution to the [Advice Generator App challenge on Frontend Mentor](ht
 - [My process](#-my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
 - [Author](#-author)
 
@@ -24,21 +25,24 @@ This is a solution to the [Advice Generator App challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
+- View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses or domains and see the key information and location
 
 ### Screenshots
 
+...  
+
 <p align="center"> 
-  <img src="public/assets/screenshot.png" alt="advice generator app">
-  <em>advice generator app</em>
+  <img src="public/assets/screenshot.png" alt="IP Address Tracker">
+  <em>IP Address Tracker</em>
 </p>
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/jakubjirous/advice-generator-app/)
-- Live Site URL: [Vercel](https://advice-generator-app-jakubjirous.vercel.app/)
+- Solution URL: [GitHub](https://github.com/jakubjirous/ip-address-tracker/)
+- Live Site URL: [Vercel](https://ip-address-tracker-jakubjirous.vercel.app/)
 
 ---
 
@@ -54,20 +58,18 @@ Users should be able to:
 - [Next.js](https://nextjs.org/) – React framework
 - [React](https://reactjs.org/) – JS library
 - [TanStack Query (FKA React Query)](https://tanstack.com/query/latest) – Data fetching library
-- [Chakra UI](https://chakra-ui.com/) – For styles
+- [Tailwind CSS](https://tailwindcss.com/) – For styles
 
 ### What I learned
 
-In this Code Challenge, I expanded my knowledge of web development by incorporating the Tanstack React Query fetching library with Next.js (v13) to create an advice generator app. 
-
-This project allowed me to develop practical skills in creating responsive and dynamic user interfaces using the latest technologies.
+...
 
 ### Useful resources
 
 - [Next.js Documentation](https://beta.nextjs.org/docs)
 - [React Documentation](https://beta.reactjs.org/)
 - [TanStack Query Documentation](https://tanstack.com/query/latest/docs/react/overview)
-- [Chakra UI Documentation](https://chakra-ui.com/getting-started)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
 
 ---
 
