@@ -102,13 +102,13 @@ module.exports = {
     borderOpacity: ({ theme }) => theme("opacity"),
     borderRadius: {
       none: "0px",
-      sm: "0.125rem",
-      DEFAULT: "0.25rem",
-      md: "0.375rem",
-      lg: "0.5rem",
-      xl: "0.75rem",
-      "2xl": "1rem",
-      "3xl": "1.5rem",
+      sm: "0.125rem", // 2px
+      DEFAULT: "0.25rem", // 4px
+      md: "0.375rem", // 6px
+      lg: "0.5rem", // 8px
+      xl: "0.75rem", // 12px
+      "2xl": "1rem", // 16px
+      "3xl": "1.5rem", // 24px
       full: "9999px",
     },
     borderSpacing: ({ theme }) => ({
@@ -206,19 +206,19 @@ module.exports = {
       10: "10",
       11: "11",
       12: "12",
-      "3xs": "16rem",
-      "2xs": "18rem",
-      xs: "20rem",
-      sm: "24rem",
-      md: "28rem",
-      lg: "32rem",
-      xl: "36rem",
-      "2xl": "42rem",
-      "3xl": "48rem",
-      "4xl": "56rem",
-      "5xl": "64rem",
-      "6xl": "72rem",
-      "7xl": "80rem",
+      "3xs": "16rem", // 256px
+      "2xs": "18rem", // 288px
+      xs: "20rem", // 320px
+      sm: "24rem", // 384px
+      md: "28rem", // 448px
+      lg: "32rem", // 512px
+      xl: "36rem", // 576px
+      "2xl": "42rem", // 672px
+      "3xl": "48rem", // 768px
+      "4xl": "56rem", // 896px
+      "5xl": "64rem", // 1024px
+      "6xl": "72rem", // 1152px
+      "7xl": "80rem", // 1280px
     },
     container: {},
     content: {
@@ -370,19 +370,19 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: ["0.75rem", { lineHeight: "1rem" }],
-      sm: ["0.875rem", { lineHeight: "1.25rem" }],
-      base: ["1.125rem", { lineHeight: "1.625rem" }], // 18px, 26px
-      lg: ["1.125rem", { lineHeight: "1.75rem" }],
-      xl: ["1.25rem", { lineHeight: "1.75rem" }],
-      "2xl": ["1.5rem", { lineHeight: "2rem" }],
-      "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
-      "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
-      "5xl": ["3rem", { lineHeight: "1" }],
-      "6xl": ["3.75rem", { lineHeight: "1" }],
-      "7xl": ["4.5rem", { lineHeight: "1" }],
-      "8xl": ["6rem", { lineHeight: "1" }],
-      "9xl": ["8rem", { lineHeight: "1" }],
+      xs: ["0.75rem", { lineHeight: "1rem" }], // "12px", "16px"
+      sm: ["0.875rem", { lineHeight: "1.25rem" }], // "14px", "20px"
+      base: ["1.125rem", { lineHeight: "1.625rem" }], // "18px", "26px"
+      lg: ["1.125rem", { lineHeight: "1.75rem" }], // "18px", "28px"
+      xl: ["1.25rem", { lineHeight: "1.75rem" }], // "20px", "28px"
+      "2xl": ["1.5rem", { lineHeight: "2rem" }], // "24px", "32px"
+      "3xl": ["1.875rem", { lineHeight: "2.25rem" }], // "30px", "36px"
+      "4xl": ["2.25rem", { lineHeight: "2.5rem" }], // "36px", "40px"
+      "5xl": ["3rem", { lineHeight: "1" }], // "48px"
+      "6xl": ["3.75rem", { lineHeight: "1" }], // "60px"
+      "7xl": ["4.5rem", { lineHeight: "1" }], // "72px"
+      "8xl": ["6rem", { lineHeight: "1" }], // "96px"
+      "9xl": ["8rem", { lineHeight: "1" }], // "128px"
     },
     fontWeight: {
       thin: "100",
@@ -605,14 +605,14 @@ module.exports = {
       normal: "1.5",
       relaxed: "1.625",
       loose: "2",
-      3: ".75rem",
-      4: "1rem",
-      5: "1.25rem",
-      6: "1.5rem",
-      7: "1.75rem",
-      8: "2rem",
-      9: "2.25rem",
-      10: "2.5rem",
+      3: ".75rem", // 12px
+      4: "1rem", // 16px
+      5: "1.25rem", // 20px
+      6: "1.5rem", // 24px
+      7: "1.75rem", // 28px
+      8: "2rem", // 32px
+      9: "2.25rem", // 36px
+      10: "2.5rem", // 40px
     },
     listStyleType: {
       none: "none",
@@ -635,17 +635,17 @@ module.exports = {
     maxWidth: ({ theme, breakpoints }) => ({
       none: "none",
       0: "0rem",
-      xs: "20rem",
-      sm: "24rem",
-      md: "28rem",
-      lg: "32rem",
-      xl: "36rem",
-      "2xl": "42rem",
-      "3xl": "48rem",
-      "4xl": "56rem",
-      "5xl": "64rem",
-      "6xl": "72rem",
-      "7xl": "80rem",
+      xs: "20rem", // 320px
+      sm: "24rem", // 384px
+      md: "28rem", // 448px
+      lg: "32rem", // 512px
+      xl: "36rem", // 576px
+      "2xl": "42rem", // 672px
+      "3xl": "48rem", // 768px
+      "4xl": "56rem", // 896px
+      "5xl": "64rem", // 1024px
+      "6xl": "72rem", // 1152px
+      "7xl": "80rem", // 1280px
       full: "100%",
       min: "min-content",
       max: "max-content",
