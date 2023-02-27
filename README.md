@@ -64,13 +64,20 @@ Users should be able to:
 
 ...
 
+### Continued development
+
+...
+
 ### Useful resources
 
 - [Next.js Documentation](https://beta.nextjs.org/docs)
 - [React Documentation](https://beta.reactjs.org/)
 - [TanStack Query Documentation](https://tanstack.com/query/latest/docs/react/overview)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
-
+  - [Quick reference](https://tailwindcss.com/docs/hover-focus-and-other-states#quick-reference) 
+  - [Customizing Screens](https://tailwindcss.com/docs/screens)
+  - [Functions & Directives](https://tailwindcss.com/docs/functions-and-directives)
+  - [Default configuration](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
 ---
 
 ## 👨‍💻 Author
