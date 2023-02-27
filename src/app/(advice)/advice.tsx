@@ -1,7 +1,9 @@
 "use client";
 
-import { fetchAdvice } from "@/app/(fetch)/fetchAdvice";
+import { fetchAdvice } from "@/app/(fetch)/fetch-advice";
 import { AdviceType } from "@/app/(fetch)/types";
+import ArrowIcon from "@/app/(icons)/arrow-icon";
+import LocationIcon from "@/app/(icons)/location-icon";
 import { useQuery } from "@tanstack/react-query";
 import React, { useCallback } from "react";
 
@@ -23,6 +25,10 @@ const Advice = ({ initialAdvice }: { initialAdvice: AdviceType }) => {
   return (
     <h1 className="bg-gray-100 text-3xl font-bold text-red-500 underline">
       Hello world!
+      <br />
+      <ArrowIcon />
+      <br />
+      <LocationIcon />
     </h1>
   );
 };
