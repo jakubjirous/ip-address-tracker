@@ -1,6 +1,7 @@
 import { manrope } from "@/app/fonts";
 import Providers from "@/app/providers";
 import React from "react";
+import "../theme/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
