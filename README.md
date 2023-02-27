@@ -78,6 +78,7 @@ Users should be able to:
   - [Customizing Screens](https://tailwindcss.com/docs/screens)
   - [Functions & Directives](https://tailwindcss.com/docs/functions-and-directives)
   - [Default configuration](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
+  - [Default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale)
 ---
 
 ## 👨‍💻 Author
