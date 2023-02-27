@@ -1,16 +1,17 @@
 {
-  "name": "frontend-mentor-advice-generator-app",
+  "name": "frontend-mentor-ip-address-tracker",
   "version": "1.0.0",
-  "description": "Get personalized advice wherever you are with this advice generator app! It's got a responsive design, interactive hover states, and instant advice generation with one click.",
+  "description": "The app should allow the user to input an IP address and display its location on a map, along with other information such as ISP and time zone.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakubjirous/advice-generator-app.git"
+    "url": "git+https://github.com/jakubjirous/ip-address-tracker.git"
   },
   "keywords": [
     "next.js",
     "react",
     "typescript",
-    "chakra-ui"
+    "tanstack-react-query",
+    "tailwind-css"
   ],
   "author": "Jakub Jirous <info@jakubjirous.cz>",
   "license": "MIT",
@@ -18,16 +19,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "theme": "chakra-cli tokens src/theme/index.ts",
-    "theme:watch": "chakra-cli tokens src/theme/index.ts --watch"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.17",
-    "@chakra-ui/next-js": "^2.0.1",
-    "@chakra-ui/react": "^2.5.1",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.6",
     "@tanstack/react-query": "^4.24.10",
     "@tanstack/react-query-devtools": "^4.24.10",
@@ -36,7 +30,6 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "framer-motion": "^9.0.4",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -44,7 +37,6 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "^2.3.0",
     "@tanstack/eslint-plugin-query": "^4.24.11"
   }
 }
