@@ -320,6 +320,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      rubik: ["var(--font-rubik)"],
       sans: [
         "ui-sans-serif",
         "system-ui",
