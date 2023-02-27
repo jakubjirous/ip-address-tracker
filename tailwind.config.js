@@ -786,11 +786,11 @@ module.exports = {
       150: "1.5",
     },
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+      sm: "375px", // 640px
+      md: "768px", // 768px --> 1440px
+      // lg: "1024px",
+      // xl: "1280px",
+      // "2xl": "1536px",
     },
     scrollMargin: ({ theme }) => ({
       ...theme("spacing"),
