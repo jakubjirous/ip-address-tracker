@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const LocationIcon: FC = () => {
+export const LocationIcon: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,5 +14,3 @@ const LocationIcon: FC = () => {
     </svg>
   );
 };
-
-export default LocationIcon;
