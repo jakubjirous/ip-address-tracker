@@ -20,3 +20,9 @@ export interface GeolocationType {
   };
   isp: string;
 }
+
+export interface MapViewport {
+  longitude: number;
+  latitude: number;
+  zoom: number;
+}
