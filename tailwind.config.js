@@ -375,7 +375,7 @@ module.exports = {
       base: ["1.125rem", { lineHeight: "1.625rem" }], // "18px", "26px"
       lg: ["1.125rem", { lineHeight: "1.75rem" }], // "18px", "28px"
       xl: ["1.25rem", { lineHeight: "1.75rem" }], // "20px", "28px"
-      "2xl": ["1.5rem", { lineHeight: "2rem" }], // "24px", "32px"
+      "2xl": ["1.625rem", { lineHeight: "2.125rem" }], // "26px", "34px"
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }], // "30px", "36px"
       "4xl": ["2.25rem", { lineHeight: "2.5rem" }], // "36px", "40px"
       "5xl": ["3rem", { lineHeight: "1" }], // "48px"
@@ -732,7 +732,7 @@ module.exports = {
     placeholderColor: ({ theme }) => theme("colors"),
     placeholderOpacity: ({ theme }) => theme("opacity"),
     ringColor: ({ theme }) => ({
-      DEFAULT: theme("colors.blue.500", "#3b82f6"),
+      DEFAULT: theme("colors.dusty.900", "#3b82f6"),
       ...theme("colors"),
     }),
     ringOffsetColor: ({ theme }) => theme("colors"),
@@ -752,6 +752,7 @@ module.exports = {
       0: "0px",
       1: "1px",
       2: "2px",
+      3: "3px",
       4: "4px",
       8: "8px",
     },
@@ -835,6 +836,7 @@ module.exports = {
       11: "2.75rem", // 44px
       12: "3rem", // 48px
       14: "3.5rem", // 56px
+      15: "3.625rem", // 58px
       16: "4rem", // 64px
       20: "5rem", // 80px
       24: "6rem", // 96px
