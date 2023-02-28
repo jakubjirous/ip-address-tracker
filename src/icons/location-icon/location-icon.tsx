@@ -5,7 +5,7 @@ export const LocationIcon: FC = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 46 56"
-      className="inline-flex h-14"
+      className="inline-flex h-14 animate-bounce"
     >
       <path
         fillRule="evenodd"
