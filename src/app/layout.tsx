@@ -1,5 +1,5 @@
 import Providers from "@/app/providers";
-import { rubik } from "@/theme/fonts";
+import { rubik } from "@/theme/fonts/fonts";
 import React from "react";
 import "../theme/globals.css";
 
@@ -7,7 +7,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={rubik.variable}>
       <head />
-      <body>
+      <body className="bg-gray-500">
         <main>
           <Providers>{children}</Providers>
         </main>
