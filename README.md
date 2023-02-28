@@ -59,6 +59,7 @@ Users should be able to:
 - [React](https://reactjs.org/) – JS library
 - [TanStack Query (FKA React Query)](https://tanstack.com/query/latest) – Data fetching library
 - [Tailwind CSS](https://tailwindcss.com/) – For styles
+- [React Hook Form](https://react-hook-form.com/)
 
 ### What I learned
 
@@ -79,6 +80,10 @@ Users should be able to:
   - [Functions & Directives](https://tailwindcss.com/docs/functions-and-directives)
   - [Default configuration](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
   - [Default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale)
+  -
+- [Heroicons](https://heroicons.com/)
+- [React Hook Form Documentation](https://react-hook-form.com/get-started)
+
 ---
 
 ## 👨‍💻 Author
