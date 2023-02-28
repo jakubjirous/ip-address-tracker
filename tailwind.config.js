@@ -66,6 +66,8 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "mobile-pattern": "url('/assets/pattern-bg-mobile.png')",
+      "desktop-pattern": "url('/assets/pattern-bg-desktop.png')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -514,6 +516,8 @@ module.exports = {
       4: "repeat(4, minmax(0, 1fr))",
       5: "repeat(5, minmax(0, 1fr))",
       6: "repeat(6, minmax(0, 1fr))",
+      35: "35% 65%",
+      40: "40% 60%",
     },
     height: ({ theme }) => ({
       auto: "auto",

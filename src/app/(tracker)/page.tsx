@@ -31,17 +31,19 @@ const Page = () => {
 
   return (
     <>
-      <Form onSubmit={onSubmit} isLoading={isFetching} isError={isError}>
-        <Form.Control>
-          <Form.Label>IP Address Tracker</Form.Label>
-          <Form.InputGroup>
-            <Form.Input />
-            <Form.Submit>
-              <ArrowIcon />
-            </Form.Submit>
-          </Form.InputGroup>
-        </Form.Control>
-      </Form>
+      <div className="bg-mobile-pattern bg-cover bg-center bg-no-repeat md:bg-desktop-pattern">
+        <Form onSubmit={onSubmit} isLoading={isFetching} isError={isError}>
+          <Form.Control>
+            <Form.Label>IP Address Tracker</Form.Label>
+            <Form.InputGroup>
+              <Form.Input />
+              <Form.Submit>
+                <ArrowIcon />
+              </Form.Submit>
+            </Form.InputGroup>
+          </Form.Control>
+        </Form>
+      </div>
       <Map />
     </>
   );
