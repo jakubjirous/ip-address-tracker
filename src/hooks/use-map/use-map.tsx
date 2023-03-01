@@ -1,3 +1,5 @@
+"use client";
+
 import { MapViewport } from "@/hooks";
 import React, {
   createContext,
