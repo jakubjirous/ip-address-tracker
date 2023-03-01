@@ -1,25 +1,18 @@
-import { GeolocationType } from "@/hooks/types";
-import { detectIpOrDomain } from "@/utils";
+"use client";
+
+import { GeolocationType } from "@/hooks";
+import { fetchGeolocation } from "@/hooks/use-geolocation/fetch-geolocation";
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 
-const fetchGeolocation = async (search: string): Promise<GeolocationType> => {
-  const { ipAddress, domain } = detectIpOrDomain(search.trim());
-
-  const { data } = await axios.get(
-    `${process.env.NEXT_PUBLIC_GEOLOCATION_API_URL}?apiKey=${process.env.NEXT_PUBLIC_GEOLOCATION_SECRET_KEY}&ipAddress=${ipAddress}&domain=${domain}`
-  );
-
-  return data;
-};
-
-const useGeolocation = (search: string) => {
+export const useGeolocation = (
+  search: string,
+  initialGeolocation?: GeolocationType
+) => {
   return useQuery({
     queryKey: ["geolocation", search],
     queryFn: () => fetchGeolocation(search),
     refetchOnWindowFocus: false,
     enabled: !!search,
+    initialData: initialGeolocation,
   });
 };
-
-export { useGeolocation, fetchGeolocation };
