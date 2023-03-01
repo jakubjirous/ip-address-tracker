@@ -10,6 +10,7 @@ export const FormSubmit: FC<PropsWithChildren> = ({ children }) => {
       type="submit"
       disabled={isLoading}
       className="flex h-12 w-12 items-center justify-center rounded-r-2xl bg-black text-white transition duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-3 active:bg-dusty-900 enabled:hover:bg-dusty-900 md:h-15 md:w-15"
+      aria-label="Submit"
     >
       {isLoading ? <SpinnerIcon /> : <>{children}</>}
     </button>
