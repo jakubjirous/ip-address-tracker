@@ -1,13 +1,12 @@
+import { MapMarker } from "@/components/map/map-marker";
 import { useMapState } from "@/hooks";
-import { LocationIcon } from "@/icons";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { FC, useMemo } from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+import ReactMapGL from "react-map-gl";
 
 export const Map: FC = () => {
   const {
     map: [mapViewport, setMapViewport],
-    marker: [makerViewport],
   } = useMapState();
 
   const { longitude, latitude, zoom } = useMemo(() => {
@@ -30,15 +29,7 @@ export const Map: FC = () => {
       onMove={(event) => setMapViewport(event.viewState)}
       {...mapViewport}
     >
-      {makerViewport && (
-        <Marker
-          latitude={makerViewport?.latitude}
-          longitude={makerViewport?.longitude}
-          offset={[18, -55]}
-        >
-          <LocationIcon />
-        </Marker>
-      )}
+      <MapMarker />
     </ReactMapGL>
   );
 };
