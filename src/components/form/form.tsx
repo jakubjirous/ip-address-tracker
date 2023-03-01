@@ -50,7 +50,7 @@ export const Form = ({
       <FormProvider {...methods}>
         <form
           onSubmit={handleSubmit(onInternalSubmit)}
-          className="flex flex-col gap-6"
+          className="flex w-full max-w-xl flex-col gap-6 md:mt-5"
         >
           {children}
         </form>
