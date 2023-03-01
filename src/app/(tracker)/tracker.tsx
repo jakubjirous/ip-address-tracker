@@ -4,6 +4,7 @@ import { Box, Form, Map } from "@/components";
 import { GeolocationType, useGeolocation, useMapState } from "@/hooks";
 import { ArrowIcon, LocationIcon } from "@/icons";
 import React, { useCallback, useEffect, useState } from "react";
+import { NavigationControl } from "react-map-gl";
 
 const Tracker = ({
   initialGeolocation,
@@ -47,7 +48,7 @@ const Tracker = ({
   return (
     <>
       <div className="items-center justify-center bg-mobile-pattern bg-cover bg-center bg-no-repeat md:bg-desktop-pattern">
-        <section className="absolute top-0 left-0 right-0 z-10 flex h-auto flex-col items-center gap-9 p-6">
+        <section className="flex h-auto flex-col items-center gap-9 p-6">
           <Form onSubmit={onSubmit} isLoading={isFetching} isError={isError}>
             <Form.Control>
               <Form.Label>IP Address Tracker</Form.Label>
@@ -89,6 +90,7 @@ const Tracker = ({
         </section>
       </div>
       <Map>
+        <NavigationControl />
         <Map.Marker>
           <LocationIcon />
         </Map.Marker>
