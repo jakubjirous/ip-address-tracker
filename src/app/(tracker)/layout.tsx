@@ -4,9 +4,9 @@ import React, { ReactNode } from "react";
 
 const TrackerLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <section className="grid h-full grid-cols-1 grid-rows-40 md:grid-rows-35">
+    <div className="grid h-full grid-cols-1 grid-rows-mobile md:grid-rows-desktop">
       {children}
-    </section>
+    </div>
   );
 };
 
