@@ -9,21 +9,21 @@ import React, {
   useState,
 } from "react";
 
-type MapStateContextType = [MapViewport, Dispatch<SetStateAction<MapViewport>>];
+type MapStateContextType = {
+  map: [MapViewport, Dispatch<SetStateAction<MapViewport>>];
+  marker: [MapViewport, Dispatch<SetStateAction<MapViewport>>];
+};
 
 const MapStateContext = createContext<MapStateContextType>(
   {} as MapStateContextType
 );
 
 export const MapProvider: FC<PropsWithChildren> = ({ children }) => {
-  const mapState = useState<MapViewport>({
-    longitude: -123.116226,
-    latitude: 49.246292,
-    zoom: 9,
-  });
+  const mapState = useState<MapViewport>();
+  const markerState = useState<MapViewport>();
 
   return (
-    <MapStateContext.Provider value={mapState}>
+    <MapStateContext.Provider value={{ map: mapState, marker: markerState }}>
       {children}
     </MapStateContext.Provider>
   );
