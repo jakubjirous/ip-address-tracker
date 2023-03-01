@@ -372,6 +372,8 @@ module.exports = {
       ],
     },
     fontSize: {
+      "3xs": ["0.5em", { lineHeight: "0.625rem" }], // "8px", "10px"
+      "2xs": ["0.625rem", { lineHeight: "0.75rem" }], // "10px", "12px"
       xs: ["0.75rem", { lineHeight: "1rem" }], // "12px", "16px"
       sm: ["0.875rem", { lineHeight: "1.25rem" }], // "14px", "20px"
       base: ["1.125rem", { lineHeight: "1.625rem" }], // "18px", "26px"
@@ -516,8 +518,8 @@ module.exports = {
       4: "repeat(4, minmax(0, 1fr))",
       5: "repeat(5, minmax(0, 1fr))",
       6: "repeat(6, minmax(0, 1fr))",
-      35: "35% 65%",
-      40: "40% 60%",
+      mobile: "300px calc(100% - 300px)",
+      desktop: "280px calc(100% - 280px)",
     },
     height: ({ theme }) => ({
       auto: "auto",
@@ -542,6 +544,8 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      76: "4.75rem",
+      164: "10.25rem",
     }),
     hueRotate: {
       0: "0deg",
@@ -643,7 +647,7 @@ module.exports = {
       sm: "24rem", // 384px
       md: "28rem", // 448px
       lg: "32rem", // 512px
-      xl: "36rem", // 576px
+      xl: "34.75rem", // 556px
       "2xl": "42rem", // 672px
       "3xl": "48rem", // 768px
       "4xl": "56rem", // 896px
@@ -664,6 +668,7 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      164: "10.25rem",
     },
     minWidth: {
       0: "0px",
@@ -831,6 +836,7 @@ module.exports = {
       3: "0.75rem", // 12px
       3.5: "0.875rem", // 14px
       4: "1rem", // 16px
+      4.5: "1.125rem", // 18px
       5: "1.25rem", // 20px
       6: "1.5rem", // 24px
       7: "1.75rem", // 28px
@@ -1002,6 +1008,7 @@ module.exports = {
       30: "30",
       40: "40",
       50: "50",
+      100: "100",
     },
   },
   plugins: [],
