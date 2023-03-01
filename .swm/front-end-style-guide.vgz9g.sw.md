@@ -15,7 +15,7 @@ The designs were created to the following widths `375px` and `1440px`.
 ```javascript
 798        screens: {
 799          sm: "375px", // 640px
-800          md: "768px", // 768px --> 1440px
+800          md: "1440px", // 768px
 801          // lg: "1024px",
 802          // xl: "1280px",
 803          // "2xl": "1536px",
