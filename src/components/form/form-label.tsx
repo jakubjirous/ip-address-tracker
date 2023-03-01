@@ -5,7 +5,7 @@ export const FormLabel: FC<PropsWithChildren> = ({ children }) => {
     <label
       htmlFor="input"
       aria-label=""
-      className="flex w-full justify-center text-center text-xl text-white md:text-2xl"
+      className="flex w-full justify-center text-center text-2xl font-medium text-white md:text-3xl"
     >
       {children}
     </label>
