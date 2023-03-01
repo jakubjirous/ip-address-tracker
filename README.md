@@ -13,7 +13,6 @@ This is a solution to the [IP Address Tracker challenge on Frontend Mentor](http
 - [My process](#-my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
 - [Author](#-author)
 
@@ -32,11 +31,14 @@ Users should be able to:
 
 ### Screenshots
 
-...  
+<p align="center"> 
+  <img src="public/assets/screenshot-desktop.png" alt="desktop version">
+  <em>desktop version</em>
+</p>
 
 <p align="center"> 
-  <img src="public/assets/screenshot.png" alt="IP Address Tracker">
-  <em>IP Address Tracker</em>
+  <img src="public/assets/screenshot-mobile.png" alt="mobile version">
+  <em>mobile version</em>
 </p>
 
 ### Links
@@ -58,11 +60,15 @@ Users should be able to:
 - [Next.js](https://nextjs.org/) – React framework
 - [React](https://reactjs.org/) – JS library
 - [TanStack Query (FKA React Query)](https://tanstack.com/query/latest) – Data fetching library
+- [Axios](https://axios-http.com/) - HTTP client
 - [Tailwind CSS](https://tailwindcss.com/) – For styles
+- [React Hook Form](https://react-hook-form.com/) - For form state management
 
 ### What I learned
 
-...
+This challenge was very interesting for me. It gave me the opportunity to deepen my knowledge of Tanstack query v4 so that I can fetch data from external APIs in a more powerful way, especially by using the useQuery hooks together with the useIsFetching hook.
+
+Also, this was the first time that I had used Tailwind CSS to implement a design, and I had also integrated Mapbox to enable the display of custom markers on online maps in precise coordinates, which is what makes this site unique.
 
 ### Useful resources
 
@@ -70,6 +76,13 @@ Users should be able to:
 - [React Documentation](https://beta.reactjs.org/)
 - [TanStack Query Documentation](https://tanstack.com/query/latest/docs/react/overview)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
+  - [Quick reference](https://tailwindcss.com/docs/hover-focus-and-other-states#quick-reference) 
+  - [Customizing Screens](https://tailwindcss.com/docs/screens)
+  - [Functions & Directives](https://tailwindcss.com/docs/functions-and-directives)
+  - [Default configuration](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
+  - [Default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale)
+- [React Hook Form Documentation](https://react-hook-form.com/get-started)
+- [Heroicons](https://heroicons.com/)
 
 ---
 

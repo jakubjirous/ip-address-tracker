@@ -1,13 +1,14 @@
-import { manrope } from "@/app/fonts";
 import Providers from "@/app/providers";
+import { rubik } from "@/theme/fonts/fonts";
 import React from "react";
+import "../theme/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en" className={rubik.variable}>
       <head />
       <body>
-        <main>
+        <main className="h-screen">
           <Providers>{children}</Providers>
         </main>
       </body>

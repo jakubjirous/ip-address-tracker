@@ -10,9 +10,6 @@ const nextConfig = {
       { loader: "@next/font/google", options: { subsets: ["latin"] } },
     ],
   },
-  env: {
-    apiUrl: "https://api.adviceslip.com",
-  },
 };
 
 module.exports = nextConfig;
