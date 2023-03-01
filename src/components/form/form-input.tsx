@@ -52,7 +52,7 @@ export const FormInput: FC<FormInputProps> = () => {
         <div
           id="inputError"
           role="alert"
-          className="absolute ml-4 mt-2 text-sm text-red-500 md:ml-6"
+          className="absolute ml-4 mt-2 w-full overflow-hidden text-ellipsis whitespace-nowrap text-sm text-red-500 md:ml-6"
         >
           {String(errors?.search?.message)}
         </div>
