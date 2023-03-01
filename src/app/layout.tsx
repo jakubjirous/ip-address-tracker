@@ -7,7 +7,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={rubik.variable}>
       <head />
-      <body className="bg-gray-500">
+      <body>
         <main className="h-screen">
           <Providers>{children}</Providers>
         </main>
