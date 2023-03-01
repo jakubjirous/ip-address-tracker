@@ -5,7 +5,7 @@ import React, { PropsWithChildren } from "react";
 
 export const Box = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex w-full max-w-6xl flex-col content-center items-center gap-6 rounded-2xl bg-white p-6 text-center md:min-h-164 md:flex-row md:items-start md:py-10 md:px-8 md:text-left">
+    <div className="flex w-full max-w-xl flex-col content-center items-center gap-6 rounded-2xl bg-white p-6 text-center md:min-h-164 md:max-w-6xl md:flex-row md:items-start md:py-10 md:px-8 md:text-left">
       {children}
     </div>
   );
