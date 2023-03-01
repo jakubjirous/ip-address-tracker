@@ -1,10 +1,10 @@
 import { MapMarker } from "@/components/map/map-marker";
 import { useMapState } from "@/hooks";
 import "mapbox-gl/dist/mapbox-gl.css";
-import React, { FC, useMemo } from "react";
+import React, { PropsWithChildren, useMemo } from "react";
 import ReactMapGL from "react-map-gl";
 
-export const Map: FC = () => {
+export const Map = ({ children }: PropsWithChildren) => {
   const {
     map: [mapViewport, setMapViewport],
   } = useMapState();
@@ -29,7 +29,9 @@ export const Map: FC = () => {
       onMove={(event) => setMapViewport(event.viewState)}
       {...mapViewport}
     >
-      <MapMarker />
+      {children}
     </ReactMapGL>
   );
 };
+
+Map.Marker = MapMarker;

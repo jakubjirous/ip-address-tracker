@@ -2,7 +2,7 @@
 
 import { Box, Form, Map } from "@/components";
 import { useGeolocation, useMapState } from "@/hooks";
-import { ArrowIcon } from "@/icons";
+import { ArrowIcon, LocationIcon } from "@/icons";
 import React, { useCallback, useEffect, useState } from "react";
 
 const Page = () => {
@@ -81,7 +81,11 @@ const Page = () => {
           </Box>
         </section>
       </div>
-      <Map />
+      <Map>
+        <Map.Marker>
+          <LocationIcon />
+        </Map.Marker>
+      </Map>
     </>
   );
 };

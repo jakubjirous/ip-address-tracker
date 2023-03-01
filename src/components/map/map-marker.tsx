@@ -1,9 +1,8 @@
 import { useMapState } from "@/hooks";
-import { LocationIcon } from "@/icons";
-import React, { FC } from "react";
+import React, { FC, PropsWithChildren } from "react";
 import { Marker } from "react-map-gl";
 
-export const MapMarker: FC = () => {
+export const MapMarker: FC<PropsWithChildren> = ({ children }) => {
   const {
     marker: [makerViewport],
   } = useMapState();
@@ -14,7 +13,7 @@ export const MapMarker: FC = () => {
       longitude={makerViewport?.longitude}
       offset={[18, -55]}
     >
-      <LocationIcon />
+      {children}
     </Marker>
   ) : null;
 };
