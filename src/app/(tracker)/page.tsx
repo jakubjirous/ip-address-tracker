@@ -52,7 +52,33 @@ const Page = () => {
               </Form.InputGroup>
             </Form.Control>
           </Form>
-          <Box data={data} />
+          <Box>
+            <Box.Item>
+              <Box.Heading>IP Address</Box.Heading>
+              <Box.Content>{data?.ip || "–"}</Box.Content>
+            </Box.Item>
+            <Box.Item>
+              <Box.Heading>Location</Box.Heading>
+              <Box.Content>
+                {data?.location?.city && data?.location?.country
+                  ? `${data?.location?.city}, ${data?.location?.country}
+              ${data?.location?.postalCode}`
+                  : "–"}
+              </Box.Content>
+            </Box.Item>
+            <Box.Item>
+              <Box.Heading>Timezone</Box.Heading>
+              <Box.Content>
+                {data?.location?.timezone
+                  ? `UTC ${data?.location?.timezone}`
+                  : "–"}
+              </Box.Content>
+            </Box.Item>
+            <Box.Item>
+              <Box.Heading>ISP</Box.Heading>
+              <Box.Content>{data?.isp || "–"}</Box.Content>
+            </Box.Item>
+          </Box>
         </section>
       </div>
       <Map />
